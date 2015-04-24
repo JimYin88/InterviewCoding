@@ -16,6 +16,21 @@ def anagrams_of_two_strings(string_1, string_2):
     if d1 == d2:
         return True
     else:
+        return False
+        
+        
+import collections
+
+def anagrams_of_two_strings2(string_1, string_2):
+    d1 = collections.Counter(string_1)
+    d2 = collections.Counter(string_2)
+    
+    if d1 == d2:
+        return True
+    else:
         return False    
+        
+anagrams_of_two_strings('ababad', 'babada')
+anagrams_of_two_strings2('ababad', 'babada')
         
 anagrams_of_two_strings('ababad', 'babada')
