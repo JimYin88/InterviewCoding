@@ -1,4 +1,12 @@
+# Created on Jun 9, 2022
+#
+# @author: Jim Yin
+
+
 def is_balanced(expr):
+    """
+    Check whether an expression has balanced (), [], {}
+    """
     if len(expr) % 2 != 0:
         return False
     matching_pair = {')': '(', ']': '[', '}': '{'}
@@ -14,5 +22,6 @@ def is_balanced(expr):
         return True
     else:
         return False
+        
         
 is_balanced('(){}[]()')
