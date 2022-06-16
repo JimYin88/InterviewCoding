@@ -1,3 +1,8 @@
+# Created on Jun 16, 2022
+#
+# @author: Jim Yin
+
+
 def is_rotated(alist, blist):
     if len(alist) != len(blist):
         return False
@@ -8,4 +13,5 @@ def is_rotated(alist, blist):
                 return True
     return False
     
-is_rotated([1, 2, 3, 4, 5, 6, 7], [6, 7, 1, 2, 3, 4, 5])
+    
+print(is_rotated([1, 2, 3, 4, 5, 6, 7], [6, 7, 1, 2, 3, 4, 5]))
